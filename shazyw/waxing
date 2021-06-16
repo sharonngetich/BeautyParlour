@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+
+<head>
+
+<title>about</title>
+</head>
+<body>
+<header>
+<center><h1>come check out</h1></center>
+</header>
+
+<div id="images">
+<img src="L.jpg">
+<img src="L1.jpg">
+<img src="val.jpeg"> 
+<img src="ser1.jpg"> 
+<img src="b.jpeg"> 
+<img src="man2.jpeg" >
+<img src="lashes.jpg"> 
+<img src="L3.jpg" >
+</div>

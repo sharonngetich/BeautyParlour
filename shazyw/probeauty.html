@@ -1,0 +1,308 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark/Light Theme</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" 
+    rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jQuery.min.js"></script>
+    <style>
+
+.container{
+	position: relative;
+	max-width: 600px;
+	height: 500px;
+	padding: 50px;
+	color: #555;
+
+}
+
+.container .content{
+	display: none;
+	margin-top: 20px;
+}
+
+.container .content.contentEnglish{
+	display: block;
+
+
+}
+
+.check{
+	position: relative;
+	width: 50px;
+}
+
+.check:before{
+	content: '';
+	position: absolute;
+	height: 25px;
+	width: 50px;
+	background: black;
+	border-radius: 25px;
+}
+
+.check:checked:before{
+	
+	background: blue;
+	
+}
+
+.check:after{
+	content: '';
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	background: #fff;
+	border-radius: 25px;
+	transition: 0.25s;
+	border: 2px solid #333;
+	box-sizing: border-box;
+}
+
+.check:checked:after{
+	left: 25px;
+	border: 2px solid #00a1ff;
+}
+
+.check:checked ~ .content.contentEnglish{
+	display: none;
+
+
+}
+
+.check:checked ~ .content.contentSwahili{
+	display: block;
+}
+
+
+.en{
+	color: #333;
+}
+
+.sw{
+	color: #00a1ff;
+}
+.contain{
+            top: 50%;
+            left: 20%;
+            width: 60%;
+            padding: 20px 40px;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px 5px #000000;
+            position: absolute;
+            display: flex;
+            align-items: center;
+        }
+        .main{
+            width: 300px;
+            top: 20px;
+            
+            right: 40px;
+            display: flex;
+            align-items: center;
+            
+        }
+         
+         .range-slider::-webkit-slider-thumb{
+             -webkit-appearance: none;
+             width: 20px;
+             height: 20px;
+             background-color: #2e5396;
+             border-radius: 50%;
+             position: relative;
+             cursor: pointer;
+         }
+
+         span.value{
+             padding: 0 20px;
+             font-size: 16px;
+             font-weight: 500;
+         }
+
+         /*.header{
+             width: 100%;
+             margin: 50px 0;
+             padding: 20px;
+             border-top: 2px solid #e7e7e7;
+             border-bottom: 2px solid #e7e7e7;
+         }*/
+
+         span.text{
+             font-size: 20px;
+             font-weight: 700;
+         }
+
+    
+    </style>
+</head>
+<body>
+    <section>
+        
+                            <div class="main">
+                    <span class="value">40px</span>
+                    <input 
+                    type="range" 
+                    name="range" 
+                    id="range-slider" 
+                    class="ranger-slider" 
+                    min="16" 
+                    max="100" 
+                    value="40" 
+                    step="1">
+                </div>
+            <div class="heading">
+            <span class="text"><div class="container">
+
+                <span class="en">English</span>
+                <input type="checkbox" class="check" name="">
+                <span class="sw">Swahili</span>
+                <div class="content contentEnglish">
+                    <h2>English</h2>
+                    <p>
+                        Hello there am trying to develop this site which will basically be for toggling between English and Kiswahili.
+        
+                    </p>
+                    <p>our goals
+    </p>
+                    <p> We pride ourself in offering a full range of gender neutral beauty treatments done by a team of proffesional stylist in an inclusive and eco-conscious environment </p>
+                    
+                </div>
+        
+                <div class="content contentSwahili">
+                    <h2>Swahili</h2>
+                    <p>
+                        Halo vipi hali zako, najaribu kuunda tuvuti ambayo itakua inageuza kati ya Kiingereza na Kiswahili
+        
+                    </p>
+                    <p>lengo letu:</p>
+                    <p> tunawapa mahudumu zinazofanywa na wafanyi kazi walio na experience  mbali mbali   </p>
+                    
+                </div></span>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <ul>
+        <li>
+            <span>Dark</span>
+            <span>Light</span>
+        </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('ul').click(function () {
+            $('ul').toggleClass('active')
+            $('section').toggleClass('dark')
+        })
+    })
+    </script>
+
+
+
+</body>
+<script src="main.js"></script>
+<head><b> <strong><B><center>PINKY BEAUTY PARLOUR</center><B></strong></b></head>
+
+<link rel="stylesheet" href="w.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="css.css">
+
+<ul>
+<ul> 
+	<li><a href="HOME.html">Home</a></li>
+	<li><a href="#">Login</a>
+			<ul>
+				<li><a href="loginstaff.html">Staff</a></li>
+				<li><a href="login.html">clientt</a></li>
+				
+			</ul>
+	</li>
+	<li><a href="#">Register</a>
+		<ul>
+			<li><a href="staff.html">Staff</a></li>
+			<li><a href="register.html">Clients</a></li>
+			
+		</ul>
+
+
+	</li>
+	<li><a href="#">Contacts</a>
+		<ul>
+			<li><a href="https://www.google.com/maps/place/Karen,+Nairobi/@-1.3159513,36.6217683,12z/data=!3m1!4b1!4m5!3m4!1s0x182f1c809869d64b:0x199b5604a77f13f5!8m2!3d-1.316866!4d36.6903289">Map</a></li>
+			<li><a href="https://www.google.com/maps/place/Karen,+Nairobi/@-1.3159513,36.6217683,12z/data=!3m1!4b1!4m5!3m4!1s0x182f1c809869d64b:0x199b5604a77f13f5!8m2!3d-1.316866!4d36.6903289">Direction</a></li>
+			<li><a href="mailto:pinky@gmail.com">Mail Box</a></li>
+
+
+		</ul>
+
+
+	</li>
+	<li><a href="Sham.html">Services</a></li>
+	<li><a href="about.html">About_Us</a></li>
+	<li><a href="news.html">News</a></li>
+	
+</ul>
+
+
+
+
+
+
+
+
+</div>
+</ul>
+ <div class="login-box">
+    <h1 id="hl">customer</h1>
+    <div class="textbox">
+      <i class="fa fa-user" aria-hidden="true"></i>
+      <input type="text" placeholder="Username" name="">
+    </div>
+    <div class="textbox">
+      <i class="fa fa-lock" aria-hidden="true"></i>
+      <input type="password" placeholder="password" name="">
+      
+    </div>
+     
+      <input class="btn" type="button" name="" value="SIGN IN">
+      <p>Don't have an account?</br>
+        <a href="register.php">Register</a>
+      </p>
+      
+    
+  </div>
+  
+
+  <div class="media">
+
+	<ol>
+	<p>Follow us on social media:</p>	
+	 <li> <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+        <li> <a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+        <li> <a href="https://google.com"><i class="fa fa-google-plus"></i></a></li>
+        <li> <a href="https://youtube.com"><i class="fa fa-youtube"></i></a></li>
+         <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+        <li> <a href="https://www.reddit.com"><i class="fa fa-reddit"></i></a></li>
+        <li> <a href="https://skype.com"><i class="fa fa-skype"></i></a></li>
+         <li><a href="https://www.wechat.com"><i class="fa fa-wechat"></i></a></li>
+        <li> <a href="https://www.pinterest.com"><i class="fa fa-pinterest"></i></a></li>
+        <li> <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+     </ol>
+     
+</div>
+
+
+</body>
+</html>
+
+
+
